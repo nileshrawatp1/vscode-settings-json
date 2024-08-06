@@ -5,6 +5,24 @@
     color: #008c7d !important;
 }
 
+.mtk3.comment-red {
+    font-family: 'Monaspace Radon', monospace !important;
+    font-weight: 800;
+    color: red !important;
+}
+
+.mtk3.comment-yellow {
+    font-family: 'Monaspace Radon', monospace !important;
+    font-weight: 800;
+    color: yellow !important;
+}
+
+.mtk3.comment-orange {
+    font-family: 'Monaspace Radon', monospace !important;
+    font-weight: 800;
+    color: orange !important;
+}
+
 .line-numbers {
     position: relative !important;
     width: 35px !important;

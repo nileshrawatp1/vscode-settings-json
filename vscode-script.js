@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (commandDialog.style.display !== "none") {
                 runMyScript();
             }
-            // Create an DOM observer to 'listen' for changes in element's attribute.
+            // Create a DOM observer to 'listen' for changes in element's attribute.
             const observer = new MutationObserver((mutations) => {
                 mutations.forEach((mutation) => {
                     if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
@@ -67,6 +67,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Append the new element as a child of the targetDiv
         targetDiv.appendChild(newElement);
+
+        // Apply custom comment styles
+        applyCustomCommentStyles();
     }
 
     // Remove the backdrop blur from the DOM when esc key is pressed.
@@ -76,4 +79,35 @@ document.addEventListener('DOMContentLoaded', function () {
             element.click();
         }
     }
+
+    // Function to apply custom styles to comments starting with // !
+    function applyCustomCommentStyles() {
+        // Get all the token elements in the editor
+        const tokens = document.querySelectorAll('.mtk3');
+
+        tokens.forEach(token => {
+            const textContent = token.textContent;
+            console.log('Token Selected:', textContent);
+
+            // Check if the comment starts with // !
+            if (textContent.startsWith('// !') || textContent.startsWith('//\u00A0!')) {
+                token.classList.add('comment-red');
+            } else if (textContent.startsWith('// /') || textContent.startsWith('//\u00A0/')) {
+                token.classList.add('comment-orange');
+            } else if (textContent.startsWith('// ?') || textContent.startsWith('//\u00A0?')) {
+                token.classList.add('comment-yellow');
+            }
+        });
+    }
+
+    // Observe changes in the editor to reapply styles when content changes
+    const editorObserver = new MutationObserver(() => {
+        applyCustomCommentStyles();
+    });
+
+    // Start observing the editor for changes
+    editorObserver.observe(document.body, { childList: true, subtree: true });
+
+    // Initial application of custom styles
+    applyCustomCommentStyles();
 });
