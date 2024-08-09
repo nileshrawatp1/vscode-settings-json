@@ -87,7 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         tokens.forEach(token => {
             const textContent = token.textContent;
-            console.log('Token Selected:', textContent);
 
             // Check if the comment starts with // !
             if (textContent.startsWith('// !') || textContent.startsWith('//\u00A0!')) {
@@ -95,6 +94,8 @@ document.addEventListener('DOMContentLoaded', function () {
             } else if (textContent.startsWith('// /') || textContent.startsWith('//\u00A0/')) {
                 token.classList.add('comment-orange');
             } else if (textContent.startsWith('// ?') || textContent.startsWith('//\u00A0?')) {
+                token.classList.add('comment-blue');
+            } else if (textContent.startsWith('// |') || textContent.startsWith('//\u00A0|')) {
                 token.classList.add('comment-yellow');
             }
         });
