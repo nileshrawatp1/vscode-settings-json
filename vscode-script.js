@@ -80,22 +80,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Function to apply custom styles to comments starting with // !
+    // Function to apply custom styles to comments starting with // ! //\u00A0
     function applyCustomCommentStyles() {
+        const alphabets = 'abcdefghijklmnopqrstuvwxyz';
         // Get all the token elements in the editor
         const tokens = document.querySelectorAll('.mtk3');
 
         tokens.forEach(token => {
-            const textContent = token.textContent;
+            let textContent = token.textContent;
+            const index = [...textContent].findIndex(char => alphabets.includes(char.toLowerCase()));
+            textContent = textContent.slice(0, index).replaceAll(/\s/g, '') // removing space from comment text
 
             // Check if the comment starts with // !
-            if (textContent.startsWith('// !') || textContent.startsWith('//\u00A0!')) {
+            if (textContent.startsWith('//!') || textContent.startsWith('!')) {
                 token.classList.add('comment-red');
-            } else if (textContent.startsWith('// /') || textContent.startsWith('//\u00A0/')) {
+            } else if (textContent.startsWith('///') || textContent.startsWith('>')) {
                 token.classList.add('comment-orange');
-            } else if (textContent.startsWith('// ?') || textContent.startsWith('//\u00A0?')) {
+            } else if (textContent.startsWith('//?') || textContent.startsWith('?')) {
                 token.classList.add('comment-blue');
-            } else if (textContent.startsWith('// |') || textContent.startsWith('//\u00A0|')) {
+            } else if (textContent.startsWith('//|') || textContent.startsWith('|')) {
                 token.classList.add('comment-yellow');
             }
         });

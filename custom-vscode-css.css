@@ -112,7 +112,7 @@
 .slider {
     position: absolute !important;
     right: 1px !important;
-    width: 1px !important;
+    width: 1.2px !important;
     background: #bc9abc !important;
     left: auto !important;
 }
@@ -148,7 +148,7 @@
 /* Search Label */
 .search-label {
     font-family: 'Geist Mono' !important;
-    font-size: 14px !important;
+    font-size: 20px !important;
     color: #fff;
     display: block;
 }
