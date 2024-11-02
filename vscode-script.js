@@ -92,14 +92,14 @@ document.addEventListener('DOMContentLoaded', function () {
             textContent = textContent.slice(0, index).replaceAll(/\s/g, '') // removing space from comment text
 
             // Check if the comment starts with // !
-            if (textContent.startsWith('//!') || textContent.startsWith('!')) {
+            if (textContent.startsWith('//!') || textContent.startsWith('!') || textContent.startsWith('/*!')) {
                 token.classList.add('comment-red');
-            } else if (textContent.startsWith('///') || textContent.startsWith('>')) {
-                token.classList.add('comment-orange');
-            } else if (textContent.startsWith('//?') || textContent.startsWith('?')) {
-                token.classList.add('comment-blue');
-            } else if (textContent.startsWith('//|') || textContent.startsWith('|')) {
+            } else if (textContent.startsWith('//|') || textContent.startsWith('|') || textContent.startsWith('/*|')) {
                 token.classList.add('comment-yellow');
+            } else if (textContent.startsWith('//?') || textContent.startsWith('?') || textContent.startsWith('/*?')) {
+                token.classList.add('comment-blue');
+            } else if (textContent.startsWith('///') || textContent.startsWith('/*/')) {
+                token.classList.add('comment-orange');
             }
         });
     }

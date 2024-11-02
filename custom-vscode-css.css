@@ -112,9 +112,19 @@
 .slider {
     position: absolute !important;
     right: 1px !important;
-    width: 1.2px !important;
+    width: 2.2px !important;
     background: #bc9abc !important;
     left: auto !important;
+    transition: width .1s ease, background .1s ease, transform .1s ease;
+}
+.slider:hover {
+    position: absolute !important;
+    right: 1px !important;
+    width: 9px !important;
+    background: #bc9abc !important;
+    left: auto !important;
+    border-radius: 10px;
+    transform: translateX(10px);
 }
 
 .codicon-toolbar-more, .codicon-word-wrap {
@@ -252,5 +262,5 @@
     background-repeat: no-repeat no-repeat !important;
     background-position: center center !important;
     background-size: contain !important;
-    width: 60% !important;
+    width: 70% !important;
 }
