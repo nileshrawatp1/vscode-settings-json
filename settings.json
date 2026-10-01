@@ -1,0 +1,347 @@
+{
+    "git.ignoreLegacyWarning": true, // Disables warning about legacy Git versions
+    "update.mode": "manual", // Disables automatic updates, requires manual update checks
+    "editor.fontSize": 18, // Sets editor font size to 18px
+    "editor.lineHeight": 0,
+    "window.zoomLevel": 0,
+    "editor.fontFamily": "'Fira Code'", // Uses Fira Code font with ligatures in editor
+    "editor.fontLigatures": true, // Enables font ligatures (special combined characters)
+    "terminal.integrated.fontFamily": "monospace", // Sets terminal font to system monospace
+    "terminal.integrated.fontSize": 16.5, // Sets terminal font size to 16.5px
+    "output.integrated.fontFamily": "monospace", // Sets output panel font to monospace
+    "output.integrated.fontSize": 16.5, // Sets output panel font size to 16.5px
+    "workbench.panel.defaultLocation": "bottom", // Positions panels (terminal, output, etc.) on the right side
+    "editor.formatOnSave": false, // Disables automatic formatting on file save
+    "editor.guides.bracketPairs": true, // Shows vertical guides for bracket pairs
+    "editor.guides.highlightActiveIndentation": true, // Highlights active indentation level
+    "editor.guides.bracketPairsHorizontal": false, // Disables horizontal bracket pair guides
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true, // Uses different color pools for different bracket types
+    "better-comments.multilineComments": true, // Enables better-comments extension for multiline comments
+    //  From Glenn Raya U-Tube Video -
+    "editor.copyWithSyntaxHighlighting": false, // Disables syntax highlighting when copying text
+    "editor.emptySelectionClipboard": false, // Prevents copying empty selection
+    "window.newWindowDimensions": "inherit", // New windows inherit dimensions from current window
+    "files.trimTrailingWhitespace": true, // Automatically removes trailing whitespace on save
+    "diffEditor.renderSideBySide": false, // Shows diff editor in inline view instead of side-by-side
+    "editor.snippetSuggestions": "top", // Shows code snippets at top of suggestion list
+    "editor.detectIndentation": false, // Disables automatic indentation detection
+    "window.nativeFullScreen": true, // Uses native full screen mode (macOS specific)
+    "files.insertFinalNewline": true, // Adds final newline at end of file on save
+    "workbench.editor.showTabs": "multiple", // Shows editor tabs even when only one file is open
+    "editor.lineNumbers": "on", // Shows line numbers in editor
+    "editor.guides.indentation": false, // Disables indentation guides
+    // Few More -
+    "breadcrumbs.enabled": false, // Disables breadcrumbs navigation bar
+    "scm.diffDecorations": "none", // Disables source control diff decorations
+    "editor.hover.delay": 1000, // Sets 1 second delay before showing hover info
+    "editor.hover.above": true,
+    "editor.hover.enabled": "on", // Enables editor hover information
+    "editor.matchBrackets": "near", // Highlights matching brackets when cursor is near them
+    "workbench.tips.enabled": false, // Disables welcome tips on startup
+    "editor.colorDecorators": false, // Disables color decorators in editor
+    "git.decorations.enabled": false, // Disables Git decorations in editor
+    "workbench.startupEditor": "none", // Opens empty editor on startup
+    "editor.lightbulb.enabled": "off", // Disables lightbulb code action indicators
+    "editor.selectionHighlight": true, // Highlights all matches of current selection
+    "editor.overviewRulerBorder": false, // Hides overview ruler border
+    "editor.renderLineHighlight": "none", // Disables line highlight (current line indicator)
+    "editor.occurrencesHighlight": "singleFile", // Highlights symbol occurrences in current file only
+    "problems.decorations.enabled": false, // Disables problem decorations in editor
+    "editor.renderControlCharacters": false, // Hides control characters in editor
+    "editor.gotoLocation.multipleReferences": "goto", // Behavior when multiple references exist (go to first)
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "workbench.editor.enablePreviewFromQuickOpen": false, // Disables editor preview mode from quick open
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    "vscode_custom_css.imports": [
+        "file:///E:/githubRepo/vscode-settings-json/custom-vscode-css.css",
+        "file:///E:/githubRepo/vscode-settings-json/vscode-script.js"
+    ],
+    "better-comments.tags": [ // Configuration for Better Comments extension tags
+        {
+            "tag": "setting",
+            "color": "#322e2f",
+            "backgroundColor": "#10ff3d",
+            "bold": true,
+            "italic": true,
+            "strikethrough": false,
+            "underline": false,
+        },
+        {
+            "tag": "added",
+            "color": "#00CCFF",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "#833AB4",
+            "bold": true,
+            "italic": true
+        },
+        {
+            "tag": "edited",
+            "color": "#1F1926",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "#008FFF",
+            "bold": true,
+            "italic": true
+        },
+        {
+            "tag": "refactor",
+            "color": "#1F1926",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "#FCEAFF",
+            "bold": true,
+            "italic": true
+        },
+        {
+            "tag": "removed",
+            "color": "#926D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "#C4FCEF",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "-",
+            "color": "#926D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "#C4FCEF",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "!",
+            "color": "#FF0000",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": true,
+            "italic": true
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": true,
+            "italic": false,
+            "size": 18
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "/",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": true,
+            "italic": true
+        },
+        {
+            "tag": "*",
+            "color": "#aa0af4",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "#000",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "fixme",
+            "color": "red",
+            "backgroundColor": "#1c33a2",
+            "bold": true,
+            "italic": true
+        },
+        {
+            "tag": "note",
+            "color": "#322e2f",
+            "backgroundColor": "#12a4d9",
+            "bold": true,
+            "italic": true,
+            "strikethrough": false,
+            "underline": false,
+        },
+        {
+            "tag": "reference",
+            "color": "#10ff0d",
+            "bold": true,
+            "italic": true,
+            "backgroundColor": "#12a4ff",
+        },
+        {
+            "tag": "fixed",
+            "color": "#10ff3d",
+            "backgroundColor": "#1c33a2",
+            "bold": true,
+            "italic": true,
+            "strikethrough": false,
+            "underline": false,
+        }
+    ],
+    "editor.linkedEditing": true, // Enables linked editing for HTML/XML tags
+    "gitlens.defaultDateFormat": "YYYY-MM-DDTHH:mm:ss", // GitLens date format configurations
+    "gitlens.defaultDateShortFormat": "YYYY-MM-DD",
+    "gitlens.defaultDateStyle": "absolute",
+    "workbench.sideBar.location": "right", // Positions sidebar on the left
+    "workbench.activityBar.location": "top", // making explorer bar icons to top
+    "sync.gist": "d37e16972c485e6e66f6b7fc7d77c6ce", // Settings Sync extension configuration
+    "files.defaultLanguage": "", // No default language for new files
+    "editor.suggest.showStatusBar": true, // Shows status bar during suggestions
+    "editor.suggest.insertMode": "insert", // Insert mode for suggestions (vs replace)
+    "workbench.settings.editor": "json", // Uses JSON editor for settings
+    "workbench.editor.highlightModifiedTabs": true, // Highlights modified tabs
+    "editor.cursorBlinking": "expand", // Cursor blinks with expand animation
+    "files.trimFinalNewlines": true, // Removes multiple final newlines on save
+    "editor.cursorSmoothCaretAnimation": "on", // Enables smooth caret animation
+    "breadcrumbs.enable": true, // Enables breadcrumbs navigation
+    "breadcrumbs.filePath": "on", // Shows file path in breadcrumbs
+    "editor.wordWrap": "on", // Enables word wrapping
+    "workbench.editor.enablePreview": false, // Disables editor preview mode
+    "php.validate.enable": false, // PHP specific settings
+    "php.suggest.basic": false,
+    "phpfmt.indent_with_space": 4,
+    "phpfmt.cakephp": true,
+    "phpfmt.passes": [
+        "AlignTypehint",
+        "AlignDoubleArrow",
+        "AlignDoubleSlashComments"
+    ],
+    "phpfmt.psr2": false,
+    "explorer.confirmDelete": false, // Disables confirmation dialogs for delete/drag operations
+    "explorer.confirmDragAndDrop": false,
+    "liveServer.settings.donotShowInfoMsg": true, // Live Server extension settings
+    "[html]": { // Default formatters for different file types
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript][javascriptreact][typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json][jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[css][scss][less]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": "never", // Disables multi-line paste warning in terminal
+    "explorer.openEditors.visible": 2, // Shows 2 open editors in explorer
+    "emmet.includeLanguages": { // Includes JSX in JavaScript Emmet suggestions
+        "javascript": "javascriptreact"
+    },
+    "workbench.colorCustomizations": { // Custom theme color modifications
+        "[Material Theme Ocean High Contrast]": {
+            "tab.activeBorderTop": "#04ff00"
+        },
+        "editorLineNumber.foreground": "#fff", // Makes non-active line numbers brighter/denser
+        "editorLineNumber.activeForeground": "#fff" // Keeps the active line highly visible
+    },
+    "terminal.integrated.tabs.defaultIcon": "bell", // Sets default terminal tab icon
+    "js/ts.updateImportsOnFileMove.enabled": "always", // Updates imports automatically when moving files
+    "files.exclude": { // File exclusion patterns
+        ".gitignore": false
+    },
+    "editor.minimap.enabled": false, // Disables minimap
+    "editor.quickSuggestions": { // Enables quick suggestions in all contexts
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "git.openRepositoryInParentFolders": "never", // Never opens Git repos in parent folders
+    "better-comments.highlightPlainText": true, // Enables Better Comments in plain text files
+    "bracket-pair-colorizer-2.languages": [ // Bracket Pair Colorizer 2 configurations
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "xml",
+        "php"
+    ],
+    "bracket-pair-colorizer-2.colors": [
+        "#FF0000",
+        "#00FF00",
+        "#0000FF"
+    ],
+    "bracket-pair-colorizer-2.scopeOverrides": {
+        "createCase.php": {
+            "bracket-pair-colorizer-2.colors": [
+                "#FFA500",
+                "#008000",
+                "#800080"
+            ]
+        }
+    },
+    "[markdown]": { // Markdown formatter
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "diffEditor.ignoreTrimWhitespace": true, // Ignores whitespace changes in diff view
+    "markdown.extension.extraLangIds": [], // Markdown extension settings
+    "[php]": { // PHP formatter
+        "editor.defaultFormatter": "vscode.php-language-features"
+    },
+    "settingsSync.ignoredSettings": [], // No ignored settings for Settings Sync
+    "terminal.integrated.defaultProfile.windows": "Git Bash", // Default terminal profile on Windows
+    "css.lint.unknownAtRules": "ignore", // Ignores unknown CSS at-rules
+    "workbench.colorTheme": "Monospace Dark", // Theme and icon theme
+    "workbench.iconTheme": "monospace-icons",
+    "markdown-preview-enhanced.previewTheme": "night.css", // Markdown preview theme
+    "eslint.options": { // ESLint configurations
+        "rules": {
+            "no-unused-vars": "off"
+        }
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "pieces.sidePanelViews.suggestedMaterials": true, // Pieces extension settings
+    "pieces.addSnippets": null,
+    "pieces.code-lens": false,
+    "git.confirmSync": false, // Git settings
+    "git.enableSmartCommit": true,
+    "terminal.integrated.env.windows": {}, // Terminal environment variables
+    "window.zoomPerWindow": false, // Disables per-window zoom level
+    "pieces.cloudCapabilities": "Blended", // More Pieces settings
+    "pieces.telemetry": true,
+    "liveServer.settings.donotVerifyTags": true, // Live Server settings
+    "codesnap.containerPadding": "0.2em", // CodeSnap extension settings
+    "codesnap.backgroundColor": "#6300c6",
+    "pieces.OS.launchOnStartup": "Yes", // Pieces OS settings
+    "[typescriptreact]": { // TypeScript React formatter
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "github.copilot.enable": { // GitHub Copilot settings
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "editor.hideCursorInOverviewRuler": true, // Hides cursor in overview ruler
+    "editor.multiCursorModifier": "ctrlCmd", // Modifier key for multi-cursor (Ctrl/Cmd)
+    "css.enabledLanguages": [ // Languages where CSS support is enabled
+        "html",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "css",
+        "scss",
+        "less"
+    ],
+    "security.workspace.trust.untrustedFiles": "open"
+}
