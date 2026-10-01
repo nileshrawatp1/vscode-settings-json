@@ -136,10 +136,10 @@
 .monaco-editor-hover,
 .monaco-hover {
     box-shadow: 0px 8px 32px rgba(0,0,0,.45) !important;
-    padding: 10px !important;
+    /* padding: 10px !important; */
     background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
     backdrop-filter: blur(3px) !important;
-    border-radius: 20px !important;
+    border-radius: 10px !important;
     border: none !important
 }
 
@@ -260,7 +260,7 @@
 
 /* Targets only the active line number in the gutter */
 .monaco-editor .margin .line-numbers.active-line-number {
-    font-size: 22px !important;  /* Makes the active line number larger */
+    font-size: 20px !important;  /* Makes the active line number larger */
     font-weight: bold !important; /* Optional: Makes it stand out more */
     transform: translateX(-2px);  /* Optional: Adjusts alignment if it overlaps the border */
 }
