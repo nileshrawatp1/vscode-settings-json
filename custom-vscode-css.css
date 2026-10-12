@@ -1,31 +1,31 @@
 /* Code comment style */
 .mtk3 {
     font-family: 'Monaspace Radon', monospace !important;
-    font-weight: 800;
+    font-weight: 800 !important;
     color: #008c7d !important;
 }
 
 .mtk3.comment-red {
     font-family: 'Monaspace Radon', monospace !important;
-    font-weight: 800;
+    font-weight: 800 !important;
     color: red !important;
 }
 
 .mtk3.comment-yellow {
     font-family: 'Monaspace Radon', monospace !important;
-    font-weight: 800;
+    font-weight: 800 !important;
     color: yellow !important;
 }
 
 .mtk3.comment-blue {
     font-family: 'Monaspace Radon', monospace !important;
-    font-weight: 800;
+    font-weight: 800 !important;
     color: #3498DB !important;
 }
 
 .mtk3.comment-orange {
     font-family: 'Monaspace Radon', monospace !important;
-    font-weight: 800;
+    font-weight: 800 !important;
     color: orange !important;
 }
 
