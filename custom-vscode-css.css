@@ -76,7 +76,7 @@
 .monaco-tree .monaco-tree-row .label-name,
 .monaco-list .monaco-list-row .monaco-icon-label .label-name {
     font-family: 'Geist Mono', monospace !important;
-    font-size: 12px !important;
+    font-size: 18px !important;
     font-weight: 400 !important;
     color: #FFF !important;
 }
